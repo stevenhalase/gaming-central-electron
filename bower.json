@@ -1,0 +1,25 @@
+{
+  "name": "gaming-central-electron",
+  "description": "An everything gaming hub.",
+  "main": "index.js",
+  "authors": [
+    "Steven Halase"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.3.1",
+    "angular": "^1.5.8",
+    "jquery": "^3.1.0",
+    "materialize": "^0.97.7",
+    "angular-sanitize": "^1.5.8"
+  }
+}

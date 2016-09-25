@@ -1,0 +1,154 @@
+html,
+.wrapper {
+  background-color: black; }
+
+.wrapper {
+  margin-left: 50px; }
+
+.fix-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* label color */
+.input-field label {
+  color: #fb8c00; }
+
+.input-field {
+  color: #ecf0f1; }
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #fb8c00; }
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #fb8c00;
+  box-shadow: 0 1px 0 0 #fb8c00; }
+
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #fb8c00;
+  box-shadow: 0 1px 0 0 #fb8c00; }
+
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #fb8c00;
+  box-shadow: 0 1px 0 0 #fb8c00; }
+
+/* label focus color */
+.input-field input[type=email]:focus + label {
+  color: #fb8c00; }
+
+/* label underline focus color */
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid #fb8c00;
+  box-shadow: 0 1px 0 0 #fb8c00; }
+
+/* valid color */
+.input-field input[type=email].valid {
+  border-bottom: 1px solid #fb8c00;
+  box-shadow: 0 1px 0 0 #fb8c00; }
+
+/* invalid color */
+.input-field input[type=email].invalid {
+  border-bottom: 1px solid #fb8c00;
+  box-shadow: 0 1px 0 0 #fb8c00; }
+
+/* label focus color */
+.input-field input[type=password]:focus + label {
+  color: #fb8c00; }
+
+/* label underline focus color */
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid #fb8c00;
+  box-shadow: 0 1px 0 0 #fb8c00; }
+
+/* valid color */
+.input-field input[type=password].valid {
+  border-bottom: 1px solid #fb8c00;
+  box-shadow: 0 1px 0 0 #fb8c00; }
+
+/* invalid color */
+.input-field input[type=password].invalid {
+  border-bottom: 1px solid #fb8c00;
+  box-shadow: 0 1px 0 0 #fb8c00; }
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #fb8c00; }
+
+/* NAV BAR */
+.nav-wrapper {
+  z-index: 50;
+  position: fixed;
+  left: 0;
+  width: 50px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-filter: blur(75%);
+  filter: blur(50%);
+  border-right: 1px solid #575858;
+  cursor: pointer;
+  -webkit-transition: width .5s ease-in-out, border-right .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out, border-right .5s ease-in-out;
+  -o-transition: width .5s ease-in-out, border-right .5s ease-in-out;
+  transition: width .5s ease-in-out, border-right .5s ease-in-out; }
+
+.open {
+  width: 100px;
+  border-right: 1px solid #fb8c00;
+  -webkit-transition: width .5s ease-in-out, border-right .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out, border-right .5s ease-in-out;
+  -o-transition: width .5s ease-in-out, border-right .5s ease-in-out;
+  transition: width .5s ease-in-out, border-right .5s ease-in-out; }
+  .open .nav-top {
+    left: 27px;
+    -webkit-transition: left .5s ease-in-out;
+    -moz-transition: left .5s ease-in-out;
+    -o-transition: left .5s ease-in-out;
+    transition: left .5s ease-in-out; }
+  .open .nav-bottom {
+    left: 27px;
+    -webkit-transition: left .5s ease-in-out;
+    -moz-transition: left .5s ease-in-out;
+    -o-transition: left .5s ease-in-out;
+    transition: left .5s ease-in-out; }
+  .open span {
+    color: #ecf0f1;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out; }
+    .open span i {
+      color: #ecf0f1;
+      -webkit-transition: color .5s ease-in-out;
+      -moz-transition: color .5s ease-in-out;
+      -o-transition: color .5s ease-in-out;
+      transition: color .5s ease-in-out; }
+
+.nav-top {
+  position: absolute;
+  left: 2px;
+  -webkit-transition: left .5s ease-in-out;
+  -moz-transition: left .5s ease-in-out;
+  -o-transition: left .5s ease-in-out;
+  transition: left .5s ease-in-out; }
+
+.nav-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  -webkit-transition: left .5s ease-in-out;
+  -moz-transition: left .5s ease-in-out;
+  -o-transition: left .5s ease-in-out;
+  transition: left .5s ease-in-out; }
+
+.nav-item i {
+  color: #575858;
+  font-size: 45px; }
+  .nav-item i:hover {
+    color: #fb8c00; }
+
+/*# sourceMappingURL=app.css.map */

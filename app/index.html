@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="gamingCentralApp">
+  <head>
+    <meta charset="UTF-8">
+    <title>A hub for everything gaming</title>
+    <script src="./components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="./components/angular/angular.js" charset="utf-8"></script>
+    <script src="./components/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+    <script src="./components/angular-sanitize/angular-sanitize.min.js" charset="utf-8"></script>
+    <script src="./components/materialize/dist/js/materialize.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./components/materialize/dist/css/materialize.min.css">
+    <!--<link rel="stylesheet" type="" href="./components/topcoat/topcoat-desktop-dark.min.css">-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="app.js" charset="utf-8"></script>
+    <script src="./factories/twitch-factory.js" charset="utf-8"></script>
+    <script src="./factories/news-factory.js" charset="utf-8"></script>
+    <script src="./dashboard/dashboard-controller.js" charset="utf-8"></script>
+    <script src="./login/login-controller.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="./login/login.css">
+    <link rel="stylesheet" href="./dashboard/dashboard.css">
+  </head>
+
+  <body ng-controller="indexCtrl as iCtrl">
+
+    <div class="nav-wrapper" ng-mouseenter="openNav()" ng-mouseleave="closeNav()" ng-class="{open : navIsOpen}">
+      <div class="nav">
+        <div class="nav-top">
+          <div class="nav-item" ng-repeat="item in navListTop">
+            <span class="tooltipped" data-position="right" data-delay="250" data-tooltip="{{item.name}}">
+              <i class="material-icons">{{item.icon}}</i>
+            </span>
+          </div>
+        </div>
+        <div class="nav-bottom">
+          <div class="nav-item" ng-repeat="item in navListBottom">
+            <span class="tooltipped" data-position="right" data-delay="250" data-tooltip="{{item.name}}">
+              <i class="material-icons">{{item.icon}}</i>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+      <ui-view></ui-view>
+
+    </div>
+  </body>
+</html>

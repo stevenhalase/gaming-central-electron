@@ -1,0 +1,131 @@
+@import '../app';
+
+.dashboard-games-header {
+    text-align: center;
+    color: $secondaryLight;
+    width: 50%;
+    float: left;
+}
+
+.dashboard-news-header {
+  text-align: center;
+  color: $secondaryLight;
+  width: 49%;
+  float: right;
+  text-align: center;
+}
+
+.dashboard-games-container {
+  width: 50%;
+  overflow: scroll;
+  float: left;
+}
+
+.dashboard-games {
+  width: 2100px;
+  text-align: center;
+
+  .game {
+    height: 300px;
+    width: 200px;
+    margin: 3px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+    img {
+      height: 300px;
+      width: 100%;
+      -webkit-filter : brightness(50%);
+      filter : brightness(50%);
+      -webkit-box-shadow: 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px rgba(0,0,0,0.75);
+      box-shadow: 0px rgba(0,0,0,0.75);
+      -webkit-transition: filter .5s ease-in-out, -webkit-filter .5s ease-in-out, box-shadow .5s ease-in-out, -webkit-box-shadow .5s ease-in-out;
+      -moz-transition: filter .5s ease-in-out, -webkit-filter .5s ease-in-out, box-shadow .5s ease-in-out, -webkit-box-shadow .5s ease-in-out;
+      -o-transition: filter .5s ease-in-out, -webkit-filter .5s ease-in-out, box-shadow .5s ease-in-out, -webkit-box-shadow .5s ease-in-out;
+      transition: filter .5s ease-in-out, -webkit-filter .5s ease-in-out, box-shadow .5s ease-in-out, -webkit-box-shadow .5s ease-in-out;
+    }
+
+    .dashboard-game--info {
+      color: $secondaryLight;
+      background-color: $primaryBackgroundColor;
+      padding: 15px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+
+      i {
+        color: $primaryColor;
+        vertical-align: middle;
+      }
+    }
+
+    .view-streams-button {
+    }
+  }
+
+  .active-game {
+
+    img {
+      -webkit-filter : brightness(100%);
+      filter : brightness(100%);
+      -webkit-box-shadow: 0px 20px 25px 4px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 20px 25px 4px rgba(0,0,0,0.75);
+      box-shadow: 0px 20px 25px 4px rgba(0,0,0,0.75);
+      -webkit-transition: filter .5s ease-in-out, -webkit-filter .5s ease-in-out, box-shadow .5s ease-in-out, -webkit-box-shadow .5s ease-in-out;
+      -moz-transition: filter .5s ease-in-out, -webkit-filter .5s ease-in-out, box-shadow .5s ease-in-out, -webkit-box-shadow .5s ease-in-out;
+      -o-transition: filter .5s ease-in-out, -webkit-filter .5s ease-in-out, box-shadow .5s ease-in-out, -webkit-box-shadow .5s ease-in-out;
+      transition: filter .5s ease-in-out, -webkit-filter .5s ease-in-out, box-shadow .5s ease-in-out, -webkit-box-shadow .5s ease-in-out;
+    }
+
+    .view-streams-button {
+      display: inline-block;
+    }
+  }
+}
+
+.dashboard-news-container {
+  color: $secondaryLight;
+  width: 49%;
+  float: right;
+  overflow: scroll;
+  text-align: center;
+
+  .dashboard-news {
+    width: 2100px;
+    text-align: center;
+
+    .dashboard-news-article {
+      height: 300px;
+      width: 400px;
+      margin: 3px;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+
+      img {
+        height: 300px;
+        width: 100%;
+      }
+
+      .dashboard-article-info {
+        position: absolute;
+        bottom: 0px;
+        background-color: rgba(0,0,0,0.7);
+        font-weight: 700;
+
+        p {
+          width: 400px;
+          padding: 10px;
+        }
+
+      }
+    }
+
+  }
+
+
+
+}

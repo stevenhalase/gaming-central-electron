@@ -1,0 +1,45 @@
+<div class="wrapper">
+
+  <div class="dashboard-games-header">
+    <p>Top Games</p>
+  </div>
+  <div class="dashboard-news-header">
+    <p>Top News</p>
+  </div>
+  <div class="clear"></div>
+  <div class="dashboard-games-container">
+    <div class="dashboard-games">
+      <div class="game" ng-click="changeActiveGame(game)"
+        ng-class="{'active-game': game == dashboardActiveGame}"
+        ng-repeat="game in dashboardGames track by $index">
+        <img ng-src="{{game.game.box.large}}">
+        <div class="dashboard-game--info" ng-if="game == dashboardActiveGame">
+          <i class="material-icons">people</i> <span><strong>{{game.viewers}}</strong> Viewers</span>
+          <button class="view-streams-button waves-effect waves-light btn orange darken-1" ng-click="goToGame(game)">View Streams</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-news-container">
+    <div class="dashboard-news">
+      <div class="dashboard-news-article" ng-click="changeActiveArticle(article, $index)"
+        ng-repeat="article in ignNewsArticles track by $index">
+        <img ng-src="{{article.urlToImage}}">
+        <div class="dashboard-article-info">
+          <p>{{article.title}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="article-{{$index}}" class="modal bottom-sheet" ng-repeat="article in ignNewsArticles track by $index">
+    <div class="modal-content">
+      <iframe src="{{sanitizeUrl(article.url)}}" width="100%" height="100%"></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+</div>

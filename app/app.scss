@@ -1,0 +1,183 @@
+$primaryBackgroundColor : black;
+$primaryColor : #fb8c00;
+$secondaryLight : #ecf0f1;
+$secondaryDark : #575858;
+
+html,
+.wrapper {
+  background-color: $primaryBackgroundColor;
+}
+
+.wrapper {
+  margin-left: 50px;
+}
+
+.fix-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.clear {
+  clear: both;
+}
+
+/* label color */
+.input-field label {
+ color: $primaryColor;
+}
+.input-field {
+ color: $secondaryLight;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: $primaryColor;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid $primaryColor;
+ box-shadow: 0 1px 0 0 $primaryColor;
+}
+/* valid color */
+.input-field input[type=text].valid {
+ border-bottom: 1px solid $primaryColor;
+ box-shadow: 0 1px 0 0 $primaryColor;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+ border-bottom: 1px solid $primaryColor;
+ box-shadow: 0 1px 0 0 $primaryColor;
+}
+/* label focus color */
+.input-field input[type=email]:focus + label {
+ color: $primaryColor;
+}
+/* label underline focus color */
+.input-field input[type=email]:focus {
+ border-bottom: 1px solid $primaryColor;
+ box-shadow: 0 1px 0 0 $primaryColor;
+}
+/* valid color */
+.input-field input[type=email].valid {
+ border-bottom: 1px solid $primaryColor;
+ box-shadow: 0 1px 0 0 $primaryColor;
+}
+/* invalid color */
+.input-field input[type=email].invalid {
+ border-bottom: 1px solid $primaryColor;
+ box-shadow: 0 1px 0 0 $primaryColor;
+}
+/* label focus color */
+.input-field input[type=password]:focus + label {
+ color: $primaryColor;
+}
+/* label underline focus color */
+.input-field input[type=password]:focus {
+ border-bottom: 1px solid $primaryColor;
+ box-shadow: 0 1px 0 0 $primaryColor;
+}
+/* valid color */
+.input-field input[type=password].valid {
+ border-bottom: 1px solid $primaryColor;
+ box-shadow: 0 1px 0 0 $primaryColor;
+}
+/* invalid color */
+.input-field input[type=password].invalid {
+ border-bottom: 1px solid $primaryColor;
+ box-shadow: 0 1px 0 0 $primaryColor;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+ color: $primaryColor;
+}
+
+/* NAV BAR */
+.nav-wrapper {
+  z-index: 50;
+  position: fixed;
+  left: 0;
+  width: 50px;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.9);
+  -webkit-filter: blur(75%);
+  filter: blur(50%);
+  border-right: 1px solid $secondaryDark;
+  cursor: pointer;
+  -webkit-transition: width .5s ease-in-out, border-right .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out, border-right .5s ease-in-out;
+  -o-transition: width .5s ease-in-out, border-right .5s ease-in-out;
+  transition: width .5s ease-in-out, border-right .5s ease-in-out;
+}
+
+.open {
+  width: 100px;
+  border-right: 1px solid $primaryColor;
+  -webkit-transition: width .5s ease-in-out, border-right .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out, border-right .5s ease-in-out;
+  -o-transition: width .5s ease-in-out, border-right .5s ease-in-out;
+  transition: width .5s ease-in-out, border-right .5s ease-in-out;
+
+  .nav-top {
+    left: 27px;
+    -webkit-transition: left .5s ease-in-out;
+    -moz-transition: left .5s ease-in-out;
+    -o-transition: left .5s ease-in-out;
+    transition: left .5s ease-in-out;
+  }
+
+  .nav-bottom {
+    left: 27px;
+    -webkit-transition: left .5s ease-in-out;
+    -moz-transition: left .5s ease-in-out;
+    -o-transition: left .5s ease-in-out;
+    transition: left .5s ease-in-out;
+  }
+
+  span {
+    color: $secondaryLight;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
+    i {
+      color: $secondaryLight;
+      -webkit-transition: color .5s ease-in-out;
+      -moz-transition: color .5s ease-in-out;
+      -o-transition: color .5s ease-in-out;
+      transition: color .5s ease-in-out;
+    }
+  }
+}
+
+.nav-top {
+  position: absolute;
+  left: 2px;
+  top: 15px;
+  -webkit-transition: left .5s ease-in-out;
+  -moz-transition: left .5s ease-in-out;
+  -o-transition: left .5s ease-in-out;
+  transition: left .5s ease-in-out;
+}
+
+.nav-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  -webkit-transition: left .5s ease-in-out;
+  -moz-transition: left .5s ease-in-out;
+  -o-transition: left .5s ease-in-out;
+  transition: left .5s ease-in-out;
+}
+
+.nav-item {
+
+  i {
+    color: $secondaryDark;
+    font-size: 45px;
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
